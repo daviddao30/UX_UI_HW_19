@@ -1,0 +1,114 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+.inline-block {
+    display: inline;
+    vertical-align: top;
+    justify-content: space-around;
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+.logo {
+    width: 5%;
+    padding: 1%;
+    float: left;
+}
+
+#contact {
+    background-color: #F68821;
+    color: white;
+    padding: 8px;
+}
+
+.heroImg {
+    height: 400px;
+    padding: 10%;
+}
+
+.heroImg img {
+    width: 500px;
+    float: right;
+    vertical-align: top;
+}
+
+.content {
+    width: 490px;
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.selectedWork {
+    padding: 25px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-template-areas: 
+    "projectOne projectTwo"
+    "projectThree projectFour"
+    ;
+}
+
+.projects img {
+    width: 500px;
+}
+
+.contact {
+    padding: 25px;
+}
+
+#email {
+    color: #F68821;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #F68821;
+}
+
+footer {
+    display: flex;
+    padding: 25px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .projects {
+        display: grid;
+        grid-template-rows: 500px 500px 500px 500px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        grid-template-areas: 
+        "projectOne"
+        "projectTwo"
+        "projectThree"
+        "projectFour"
+        ;
+    }
+  }
