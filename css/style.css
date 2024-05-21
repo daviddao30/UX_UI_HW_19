@@ -1,6 +1,30 @@
 html {
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.name {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F68821;
+}
+
+h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F68821; 
 }
 
 .inline-block {
@@ -25,10 +49,18 @@ nav ul {
     float: left;
 }
 
-#contact {
+button {
     background-color: #F68821;
     color: white;
-    padding: 8px;
+    padding: 11px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #ADC03D;
 }
 
 .heroImg {
@@ -42,6 +74,21 @@ nav ul {
     vertical-align: top;
 }
 
+h2 {
+    color: #F68821;
+}
+
+li {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li:hover {
+    color: #ADC03D;
+    text-decoration: underline;
+}
+
 .content {
     width: 490px;
     margin: 0 auto;
@@ -49,15 +96,16 @@ nav ul {
     margin-bottom: 50px;
 }
 
-.selectedWork {
+#selectedWork {
     padding: 25px;
 }
 
 .projects {
     display: grid;
+    margin-top: 40px;
     grid-template-rows: 500px 500px;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 50px;
+    grid-row-gap: 40px;
     grid-template-areas: 
     "projectOne projectTwo"
     "projectThree projectFour"
@@ -68,17 +116,14 @@ nav ul {
     width: 500px;
 }
 
-.contact {
+#contact {
     padding: 25px;
 }
 
 #email {
     color: #F68821;
     text-decoration: underline;
-}
-
-h3 {
-    color: #F68821;
+    font-weight: bold;
 }
 
 footer {
@@ -95,7 +140,11 @@ footer ul {
     text-align: center;
 }
 
-
+.btn2 {
+    background-color: transparent;
+    stroke: white;
+    outline: 1px;
+}
 
 @media only screen and (max-width: 600px) {
 
